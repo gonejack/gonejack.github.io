@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://igonejack.github.io/"/>
-  <updated>2018-04-02T13:38:51.148Z</updated>
+  <updated>2018-04-02T16:22:41.779Z</updated>
   <id>http://igonejack.github.io/</id>
   
   <author>
@@ -17,35 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>二十八日</title>
-    <link href="http://igonejack.github.io/2018/03/28/%E4%BA%8C%E5%8D%81%E5%85%AB%E6%97%A5/"/>
-    <id>http://igonejack.github.io/2018/03/28/二十八日/</id>
-    <published>2018-03-27T16:29:18.000Z</published>
-    <updated>2018-04-02T13:38:51.148Z</updated>
-    
-    <content type="html"><![CDATA[<p>每一天我们都可以在网络上认识一些人。</p><p>我最近在网上认识了一位，她笑起来很开心，语言里永远乐观。</p><p>一个人的经历可以隐藏得很深，但不知是不是二零一八年的原因，我觉得我的观察力强了一些，会开始发现一些平时不会注意的东西。</p><p>譬如一个人基本的年龄，从小的出身，和社会的过往。</p><p>原来微笑的后面可以有好多经历，也可以本人都未曾发觉。</p><p>从最低起点的出发，到暂时的人生高峰，又再回归现实的冷漠。</p><p>看不到她哭的时候我很担心，因为她始终是一个感情纯真的女孩。</p><p>每日忙碌的生活中抽出时间去关心下其他人的生活原来都很有收获。才发觉自己的生活其实很简单。</p><p>我希望有一天我也是一个感情纯真的人。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;每一天我们都可以在网络上认识一些人。&lt;/p&gt;
-&lt;p&gt;我最近在网上认识了一位，她笑起来很开心，语言里永远乐观。&lt;/p&gt;
-&lt;p&gt;一个人的经历可以隐藏得很深，但不知是不是二零一八年的原因，我觉得我的观察力强了一些，会开始发现一些平时不会注意的东西。&lt;/p&gt;
-&lt;p&gt;譬如一个人基本的
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
-    <link href="http://igonejack.github.io/2015/03/20/hello-world/"/>
-    <id>http://igonejack.github.io/2015/03/20/hello-world/</id>
-    <published>2015-03-19T16:00:00.000Z</published>
-    <updated>2018-04-02T13:35:09.942Z</updated>
+    <link href="http://igonejack.github.io/2018/04/03/hello-world/"/>
+    <id>http://igonejack.github.io/2018/04/03/hello-world/</id>
+    <published>2018-04-02T16:00:00.000Z</published>
+    <updated>2018-04-02T16:22:41.779Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
@@ -54,6 +30,405 @@
       
       
         &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>细腻</title>
+    <link href="http://igonejack.github.io/2018/03/25/%E7%BB%86%E8%85%BB/"/>
+    <id>http://igonejack.github.io/2018/03/25/细腻/</id>
+    <published>2018-03-24T17:02:13.000Z</published>
+    <updated>2018-04-02T16:15:33.439Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="2">从小时起接触的屏幕，从电视，掌上游戏机，街头游戏机，电脑显示器，到高中时代的音乐播放器，手机，电子辞典到大学时候的墨水屏电子书，都有明显的像素点，个人对此非常敏感而又无可奈何，隐约的难受了整个成长历程。</font><div><span style="font-size: small;"><br></span></div><div><span style="font-size: small;">那时对科技的幻想是未来有种像铜版纸杂志书页般细腻的显示屏技术，可以做到无论凑多近都看不出毛刺的舒适自然，显示出最清丽的文字最跃然的图像。</span><div><font size="2"><br></font></div><div><font size="2">这一对遗憾与希望伴随了十年二十年。</font><font size="2">尽管手机几年前已经达成此目标，却</font><span style="font-size: small;">始终</span><font size="2">对购买带显示的电子产品心有忌讳，有时就宁愿放弃，因自己每天观看时间最长，最重视的那块桌面电脑屏幕永远是那么粗糙丑陋，</font><span style="font-size: small;">十几年来</span><span style="font-size: small;">未曾变化过的地不适合阅读。</span></div><div><span style="font-size: small;"><br></span></div><div><span style="font-size: small;">一个宅男的生活幻想其实就是简单的坐在电脑面前，点着屏幕看一整天的理论</span><span style="font-size: small;">技术</span><span style="font-size: small;">书籍。在合适的年龄里可惜并没有条件环境。</span></div><div><font size="2"><br></font></div><div><font size="2">几日</font><span style="font-size: small;">前</span><font size="2">无心插柳逛了下电商平台，才发现离细腻时代只差临门一脚，大尺寸的</font><span style="font-size: small;">高像素密度屏幕的价格已进入可以承受的范围，而</span><span style="font-size: small;">为工作购买的苹果笔记本也正好适配，一切都准备好了，只是需要自己比主流先行争取一步。</span></div><div><span style="font-size: small;"><br></span></div><div><span style="font-size: small;">使用几天后的体验是生活满意度的提升，作为技术宅，吃穿都可以随意，可以一整年的全家便当都毫无感觉，但一个身边工具的改善却可以让自己找到幸福点。</span></div><div><font size="2"><br></font></div><div><font size="2">一个伴随多年的痛点这样不经意间地消失，就像</font><span style="font-size: small;">很多从小一起长大的不愉快和在意一样消逝，每每细想，不得不感慨时间力量。</span></div></div></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font size=&quot;2&quot;&gt;从小时起接触的屏幕，从电视，掌上游戏机，街头游戏机，电脑显示器，到高中时代的音乐播放器，手机，电子辞典到大学时候的墨水屏电子书，都有明显的像素点，个人对此非常敏感而又无可奈何，隐约的难受了整个成长历程。&lt;/font&gt;&lt;div&gt;&lt;span sty
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>三月六号</title>
+    <link href="http://igonejack.github.io/2018/03/08/%E4%B8%89%E6%9C%88%E5%85%AD%E5%8F%B7/"/>
+    <id>http://igonejack.github.io/2018/03/08/三月六号/</id>
+    <published>2018-03-08T03:04:49.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><div><font size="2">工作的事是做不完的。</font></div><div><font size="2"><br></font></div><div><font size="2">最近想卸载微信是，背后的那一套人际关系严重打扰生活，数不清每日到底工作多少小时。</font></div><div><font size="2"><br></font></div><div><font size="2">以前会以为一些事情比较重要，</font><span style="font-size: small;">便有认真对待，</span><font size="2">可临时占用些个人时间。后来明白落后社会的许多落后制度与人事并不值得信任，事实是没有人替你考虑，终究是项纯粹浪费。</font></div><div><font size="2"><br></font></div><div><font size="2">每天下班后能够维持自己的一份乐趣就变得十分重要。</font></div><div><font size="2"><br></font></div><div><font size="2">或者发呆也是开心的事。</font></div></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;工作的事是做不完的。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;最近想卸载微信是，背后的那一套人际关系严重打扰生活，数不清每日到底工作
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>二月二十</title>
+    <link href="http://igonejack.github.io/2018/02/20/%E4%BA%8C%E6%9C%88%E4%BA%8C%E5%8D%81/"/>
+    <id>http://igonejack.github.io/2018/02/20/二月二十/</id>
+    <published>2018-02-20T15:14:44.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><div>保持居家环境的洁净是大烦恼，比工作影响心情。</div><div><br></div><div>曾以邋遢体现一人的时间用在他专注的地方为由，无法抗拒的脏乱便无关大事。现在想法并非如此，是年少缺乏意志力不足以分配顾及生活，便于这些要求放松。</div><div><br></div><div>随年纪增加，对自身要求愈发严格。见过未曾学会自我控制的成年，可感觉其呼吸都不守规则。</div><div><br></div><div>恰好人的意志并非天生固定是可以锻炼，按年龄，此后多可规划，多做事情也持更高标准。</div><div><br></div><div>毕竟只有洁净的环境能让人心情舒畅。</div></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;div&gt;保持居家环境的洁净是大烦恼，比工作影响心情。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;曾以邋遢体现一人的时间用在他专注的地方为由，无法抗拒的脏乱便无关大事。现在想法并非如此，是年少缺乏意志力不足以分配顾及生活，便于这些要求放松。&lt;/div&gt;&lt;div&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2017年12月03日</title>
+    <link href="http://igonejack.github.io/2017/12/03/2017%E5%B9%B412%E6%9C%8803%E6%97%A5/"/>
+    <id>http://igonejack.github.io/2017/12/03/2017年12月03日/</id>
+    <published>2017-12-03T15:32:40.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="2">到了对什么都兴趣不大的年纪后，工作就是生活很大的一部分了。</font><div><font size="2"><br></font></div><div><font size="2">职业刚好也是自己平日里花最多时间捣鼓的东西，工作和业余的一致性让人有很多的时间精力投入其中。</font></div><div><font size="2"><br></font></div><div><font size="2">每月领到工资后能够存下钱来，便等于存下了一份心情和时间。</font></div><div><font size="2"><br></font></div><div><div><font size="2">生活的稳定是一切断断续续的延续重复，不会突然间就好起一件事而投入大量精力，也不大可能突然间就厌恶自己言行做什么痛下决心。</font></div><div><font size="2"><br></font></div><div><font size="2">像是抽烟喝酒，有时候就是忘了，两三个月也没有碰，有时候就</font><span style="font-size: small;">逛超市时</span><span style="font-size: small;">想起来，会买一包一瓶，只是因为不是真心喜欢，就不会陷入其中，却也好多年来不曾舍弃过。</span></div><div><font size="2"><br></font></div><div><font size="2">和看书一样，没有多喜欢，却也每天都能抽时间看一两页或一两章，可能会断掉一阵子，之后忙完又继续捡起。</font></div><div><font size="2"><br></font></div></div><div><font size="2">不禁要感慨，原来到了这个年纪，是没有喜欢这种感情的。</font></div></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font size=&quot;2&quot;&gt;到了对什么都兴趣不大的年纪后，工作就是生活很大的一部分了。&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;职业刚好也是自己平日里花最多时间捣鼓的东西，工作和业余的一
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>秋</title>
+    <link href="http://igonejack.github.io/2017/10/29/%E7%A7%8B/"/>
+    <id>http://igonejack.github.io/2017/10/29/秋/</id>
+    <published>2017-10-29T13:13:45.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="2">      进入十月以后，我周末出门时候，总在开关房门那一刻，感叹秋天气息清新惬意。在广州漫长的夏天里，打开房门那一刻总是可怕的，有一瞬间甚至称为闷热得难以呼吸。  </font>  <div>      <font size="2"><br>      </font>  </div>  <div>      <font size="2">          虽今日倍感愉悦的秋实则是二十七八度气温，在北方听来这个气温的这季节有些定义不正。但倘若经历了南方的夏再谈南方这失准的秋，任凭谁都也应会对现在的凉天心怀感激。      </font>  </div>  <div>      <font size="2"><br>      </font>  </div>  <div>      <font size="2">          早年读书多愁善感年段，每逢秋风扫起道路，短暂日光时，都会欲哭无泪，有些对当下生活现实的抽离无谓，不想做事，也不管学习。会同些旧日女同学讲起此等悲秋心绪，而或中二或现实的男同学自然是不能讲起的。后来方知，女同学更现实得多，更无可交流的。      </font>      <span style="font-size: small;">          自那时起是一人生活的，而后做了很多不该的事。      </span>  </div>  <div>      <span style="font-size: small;"><br>      </span>  </div>  <div>      <font size="2">          上周出门走段路后，突然发现周围气息秋意盎然而我却不再能如从前般自由拥有，有些许失望而又很快开怀，因为已经过了那个能拥有情绪的年龄。      </font>  </div>  <div>      <font size="2"><br>      </font>  </div>  <div>      <font size="2">          能做只是，像已历过太多的过客般，面对眼前景色只是目光里带着回味与笑意，而不为之驱动，或得意或失意。      </font>  </div></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font size=&quot;2&quot;&gt;      进入十月以后，我周末出门时候，总在开关房门那一刻，感叹秋天气息清新惬意。在广州漫长的夏天里，打开房门那一刻总是可怕的，有一瞬间甚至称为闷热得难以呼吸。  &lt;/font&gt;  &lt;div&gt;      &lt;font size=&quot;2&quot;&gt;&lt;br&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>二十八日</title>
+    <link href="http://igonejack.github.io/2017/08/29/%E4%BA%8C%E5%8D%81%E5%85%AB%E6%97%A5/"/>
+    <id>http://igonejack.github.io/2017/08/29/二十八日/</id>
+    <published>2017-08-28T16:44:40.000Z</published>
+    <updated>2018-04-02T16:21:49.453Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="2">去年花了不少钱，买了听音设备，在之后一年里发现缺少的是认真听曲的那份纯心。</font><div><font size="2"><br></font></div><div><font size="2">周末开通了苹果的音乐订阅，一个月十元的价格，就没有必要再下载盗版和整理那些混乱的歌曲信息了。也响应了不久前接受的观念：花钱买时间对每个人都是收益很好的事情。</font></div><div><font size="2"><br></font></div><div><font size="2">接着电路设计差劲的高价耳机断了焊接线点，在拿去找人修和自己淘宝花二十元买个电烙铁之间权衡了下，选择后者。在这一点，我已经越来越像那些三十几岁的人，做什么前都习惯性地分析各种成本。和年轻时只价格，其他的时间，心情，精力，情感都考虑不到的时候不同。</font></div><div><font size="2"><br></font></div><div><font size="2">洗完澡裸着，坐在电脑前把耳机改改设计焊好后。几张过去熟悉得不能再熟的专辑，是那么好听。</font></div><div><font size="2"><br></font></div><div><font size="2">随便的生活过了太多，想着把宽带停了，腾出点心思，去钟爱生活。</font></div></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font size=&quot;2&quot;&gt;去年花了不少钱，买了听音设备，在之后一年里发现缺少的是认真听曲的那份纯心。&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;周末开通了苹果的音乐订阅，一个月十元的价格
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>五一前</title>
+    <link href="http://igonejack.github.io/2017/04/24/%E4%BA%94%E4%B8%80%E5%89%8D/"/>
+    <id>http://igonejack.github.io/2017/04/24/五一前/</id>
+    <published>2017-04-24T15:23:15.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><font size="2">总觉得有念想可表达，但也讲不出什么。</font></div><div><font size="2"><br></font></div><div><font size="2">早几年时候还能每日记录些许新知感悟，而今头脑的灵性再想找寻是已不复存在，只有一心疲惫对生活的倦怠。</font></div><div><font size="2"><br></font></div><div><font size="2">年岁四季快得心如死灰，对许多事情失去兴趣周遭也重复得无意义，新鲜们似乎都带早年经历过的麻木。</font></div><div><font size="2"><br></font></div><div><font size="2">笔下最末尾的最真实兴叹，也会安慰言，人之如人，却总该像个快乐猢狲，志得意满而无畏角逐，才不至于此丧心无聊。</font></div><div><font size="2"><br></font></div><div><font size="2">散文《中年》，有获得帮助的理解安抚，遗憾于我们这一代的父辈教不了我们什么，民国人的文章倒可求知消耗。</font></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;font size=&quot;2&quot;&gt;总觉得有念想可表达，但也讲不出什么。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;早几年时候还能每日记录些许新知感悟，而今头脑的灵性再想找寻是已不
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>愚人</title>
+    <link href="http://igonejack.github.io/2017/04/01/%E6%84%9A%E4%BA%BA/"/>
+    <id>http://igonejack.github.io/2017/04/01/愚人/</id>
+    <published>2017-04-01T15:46:55.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><font size="2">我们终得到自己曾想要的，却绝感不到曾想的幸福。</font></div><div><font size="2"><br></font></div><div><font size="2">也到了现在才明白年少时的各种咬牙和内责是幼稚。</font></div><div><font size="2"><br></font></div><div><font size="2">知晓了生活面目后，学不会珍惜每一天是最可怜。</font></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;font size=&quot;2&quot;&gt;我们终得到自己曾想要的，却绝感不到曾想的幸福。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;也到了现在才明白年少时的各种咬牙和内责是幼稚。&lt;/fo
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>春暖</title>
+    <link href="http://igonejack.github.io/2017/03/23/%E6%98%A5%E6%9A%96/"/>
+    <id>http://igonejack.github.io/2017/03/23/春暖/</id>
+    <published>2017-03-23T14:18:49.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><font size="2">这里的春暖是雾气与潮湿，水汽的呼吸，水汽的皮肤，水汽的衣被。</font></div><div><font size="2"><br></font></div><div><font size="2">听人说北方四季分明，并未有如此黏腻的春气，一时有些羡慕。</font></div><div><font size="2"><br></font></div><div><font size="2">小时爱读科普小文，有个成语印象颇深，春捂秋冻，每一年在天冷天热变化之时，外出体会常常想起。讲的是秋风凉起时，要让身体多受天冷的考验，春天则相反。</font></div><div><font size="2"><br></font></div><div><font size="2">乍暖还寒时候亦暖亦寒之时，久未经病恙而自信过了头，不在意间大感一番风寒，病重得可谓不省人事。</font></div><div><font size="2"><br></font></div><div><font size="2">倒是反思起来自身年龄，二十五岁是人的一生身体最好的一年，接下来的时光里，它的素质只会逐年下降。</font></div><div><font size="2"><br></font></div><div><font size="2">想想毕竟二十六了，心</font><span style="font-size: small;">大</span><span style="font-size: small;">间有些弱感。</span></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;font size=&quot;2&quot;&gt;这里的春暖是雾气与潮湿，水汽的呼吸，水汽的皮肤，水汽的衣被。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;听人说北方四季分明，并未有如此黏腻的春气
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一月</title>
+    <link href="http://igonejack.github.io/2017/01/26/%E4%B8%80%E6%9C%88/"/>
+    <id>http://igonejack.github.io/2017/01/26/一月/</id>
+    <published>2017-01-25T17:03:17.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="2">日记记录节奏放慢，生活的节奏就快了。也会忘记许多事，许多重复的日常。</font><div><font size="2"><br></font></div><div><font size="2">每当不喜欢一些人或者一些事情，引些许情绪波动时，才会想到自己又违背初心地把许多时间，花在不该间的思想上，是生命浪费的行径。即便生活它本身就是如此，即便已是</font><span style="font-size: small;">保留足够精力时间去拥有自我世界，</span><font size="2">很独了的一个人，</font><span style="font-size: small;">还是会再企图修正。一开始选择了修为，便不应再在意俗是俗非。</span></div><div><span style="font-size: small;"><br></span></div><div><span style="font-size: small;">一六年最大感悟，是贪念的放弃与现实妥协，这一年后许多事已经不想做。</span><span style="font-size: small;">一五年时候还曾会有心美好，在网络上认识些陌生，如今却也不再想去认识些什么。</span></div><div><span style="font-size: small;"><br></span></div><div><span style="font-size: small;">这种变化大概就是所谓的心性沉淀。度过了二十岁出头最艰难的迷茫与混沌，能以一种平稳的心态，去完成波澜不惊的每日，是时去开始一些。</span></div><div><span style="font-size: small;"><br></span></div><div><span style="font-size: small;">时间太快地到了二零一七，七年时间，还未曾准备年轻，便已老去，日子果真是用来虚度的，多愁善感。</span></div>/font&gt;<div><font size="2">多年来喜欢和不苟言笑的人相处，尽管很多时候是有距离的，却多少年来都让人放心。我开始想起一些远方。</font><span style="font-size: small;">或许下一次再碰到一个陌生者前来与我消除距离时，会清醒而主动与其保持距离。</span></div><div><font size="2"><br></font></div><div><font size="2">2018年想拿出更多时间，做自己的事情。每天都活于多过无意义的人事想法糟烂中，一切都没有在自己的世界里安静。</font></div><div><font size="2"><br></font></div><div><font size="2">前几天温度刚好时候，</font><span style="font-size: small;">为些记不起来的别的事</span><span style="font-size: small;">不开心的心，</span><font size="2">回到白天清扫过很是干净的房间里，不经意的扫眼发现眼前一切，桌椅，电脑手机，书纸笔，杯子耳机手表，桌垫杯垫，落地的台灯与风扇，夜晚灯光浅黄和大窗台。</font><font size="2">无一不是自己喜爱挑选的造型和颜色，这是如海报电影绘画，过去心目中的理想环境。</font><span style="font-size: small;">那一刻视线呆滞了五分钟后，觉得可笑。</span></div><div><span style="font-size: small;"><br></span></div><div><span style="font-size: small;">我很久，或许从来没有审视自己是否在浪费愧对时光与年龄。</span></div></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font size=&quot;2&quot;&gt;日记记录节奏放慢，生活的节奏就快了。也会忘记许多事，许多重复的日常。&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;每当不喜欢一些人或者一些事情，引些许情绪波动时，
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>十二月</title>
+    <link href="http://igonejack.github.io/2016/12/11/%E5%8D%81%E4%BA%8C%E6%9C%88/"/>
+    <id>http://igonejack.github.io/2016/12/11/十二月/</id>
+    <published>2016-12-11T15:53:26.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><font size="2">时间到了十二月，一年的时间，大约的估算也太多的花在了工作上。大手大脚无顾忌实则不敢的心态，花去大把工资去买些生活品质的物件，也才发现并没有时间去享受。以前并不懂什么是真正的拥有，如今明了是能花费在其上的时间。</font></div><div><font size="2"><br></font></div><div><font size="2">如果接触到的新事物新知识总会知晓自身无知，会带来过多的不安与呓念。人总有着想要更多的本性，无力占有多时转而追求好，其实更好是更多罢了。时间却总是有限的，愚蠢的大脑每天亦有许多白日梦时刻需要去发呆。</font></div><div><font size="2"><br></font></div><div><font size="2">当有些事情我一辈子都不会知道，有些领域我此生都一无所知的事实摆在面前时还是不甘心的，原因根本，因人是贪婪而不理性的，原始冲动依旧有待驯服。</font></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;font size=&quot;2&quot;&gt;时间到了十二月，一年的时间，大约的估算也太多的花在了工作上。大手大脚无顾忌实则不敢的心态，花去大把工资去买些生活品质的物件，也才发现并没有时间去享受。以前并不懂什么是真正的拥有，如今明了是能花费在其上的时间。&lt;/font&gt;&lt;/div&gt;&lt;di
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>周末</title>
+    <link href="http://igonejack.github.io/2016/11/20/%E5%91%A8%E6%9C%AB/"/>
+    <id>http://igonejack.github.io/2016/11/20/周末/</id>
+    <published>2016-11-20T14:52:05.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="2">周五晚赶赴饭局，散场之时颇感基友意外贪玩，还有网吧游戏计划。五人游戏开黑至深夜两点多。二十多岁已经玩不动，不如二十岁前还能通宵达旦。</font><div><font size="2"><br></font></div><div><font size="2">最近发生了一些事情，又在感叹了自己心行不一，道德水准下流，希望能找到正确去纠正。</font></div><div><font size="2"><br></font></div><div><font size="2">再是每逢周末爱听历史，听听古人的那些苟且，能深刻感知到当下人的哪些猥琐。我一直希望自己的几十年时间资源能用在较长远价值的意义上，可惜每每日常都花在了眼前。</font></div></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font size=&quot;2&quot;&gt;周五晚赶赴饭局，散场之时颇感基友意外贪玩，还有网吧游戏计划。五人游戏开黑至深夜两点多。二十多岁已经玩不动，不如二十岁前还能通宵达旦。&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font s
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>十一月</title>
+    <link href="http://igonejack.github.io/2016/11/06/%E5%8D%81%E4%B8%80%E6%9C%88/"/>
+    <id>http://igonejack.github.io/2016/11/06/十一月/</id>
+    <published>2016-11-05T18:19:18.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="2">十月残存的暑气过去，踏入十一月开始，天气凉快了。上个周末在屋里呆坐一天踏出房门那一刻，无预期地邂逅了久违的秋凉，心思一瞬间变得有些欣喜而后跨越，跨越到一些对这个季节的描写与记忆中，这个秋比思念中的印象更清新。</font><div><div><font size="2"><br></font></div><div><font size="2">工作以后好久没有听见过风吹树林的声响，内心不自觉地安排着这个周日要出去散步。看看一定还是很美的落日，或许天气好的话，会有傍晚提早的晶莹蓝灰色夜空和一份愉悦的情思收获，这是刚到此地尚未与现实碰撞，那一年末的少年日子里常做的事。</font></div><div><font size="2"><br></font></div><div><font size="2">趁着十月末的慵懒不理智，买了个Mac mini。高中时起不知为何，或许是看了太多的电子杂志的缘故，心里是讨厌苹果这一媒体词语的。</font></div><div><font size="2"><br></font></div><div><font size="2">这几年放下了许多执念，开始学会理性去代替喜好时，看到了这个工业设计让人可心的作品带来的眼睛收益，以及长期以来开源系统的不可靠已给不再拥有大量个人时间的使用场景造成的消耗。</font></div><div><font size="2"><br></font></div><div><font size="2">总体是一件从外观到内部硬件构造上很不错的作品，个人感觉喜爱。虽然内部软件上有不专注一些缺失，作为个人的生产力工具。</font></div><div><font size="2"><br></font></div><div><font size="2">大概可能也许会增加一些专注力吧，虽已不再执念于对自身人性的斗争。心有不甘心有戚戚焉的是，生活乱来了。没有了安排与被安排时，会有些无所事事的不乐意。比起之前的不安，倒是觉察到了原因所在，是花费了太多时间，在太多事情的缘故，没有专心专情。</font></div><div><font size="2"><br></font></div><div><font size="2">这该是活在安静世界里最需要的精神力量了吧。</font></div><div><font size="2"><br></font></div><div><font size="2">好在冷静的秋天它来了。</font></div></div></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font size=&quot;2&quot;&gt;十月残存的暑气过去，踏入十一月开始，天气凉快了。上个周末在屋里呆坐一天踏出房门那一刻，无预期地邂逅了久违的秋凉，心思一瞬间变得有些欣喜而后跨越，跨越到一些对这个季节的描写与记忆中，这个秋比思念中的印象更清新。&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>国庆</title>
+    <link href="http://igonejack.github.io/2016/10/28/%E5%9B%BD%E5%BA%86/"/>
+    <id>http://igonejack.github.io/2016/10/28/国庆/</id>
+    <published>2016-10-27T17:04:41.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><font size="2">国庆时回了趟家乡，因为建了新房。</font></div><div><font size="2"><br></font></div><div><font size="2">在拮据窘迫的环境里度过了生命头二十年的人，很难会对这二十年里共处的人，共处的地方有所情感，家乡是我不值得怀念的过往。</font></div><div><font size="2"><br></font></div><div><font size="2">翻看了些照片，发现几岁时我也曾经是个坐在玩具熊旁边的小男孩。</font></div><div><font size="2"><br></font></div><div><font size="2">印象的重点不是那个岁数的自己，而是那只玩具熊。隐约告诉着母亲以前也曾是个年轻妈妈，像现在的八零后们妈妈一样，像个少女般地疼爱着孩子，自己也曾被爱过。与印象中的愁眉苦脸，放弃生活是不一样的形象，长期以来我都习惯了去以为这是个不曾有过笑容的家庭。</font></div><div><font size="2"><br></font></div><div><div><font size="2">此次回去最大感慨，观念上的差距，空间上的差距，统统使用了时间去解决，这是穷人生命的代价。</font></div><div><font size="2"><br></font></div><div><font size="2">感觉到家人的目光点亮了，却也知晓自己暗淡多年的双眼，没有了恢复的可能。</font></div></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;font size=&quot;2&quot;&gt;国庆时回了趟家乡，因为建了新房。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;在拮据窘迫的环境里度过了生命头二十年的人，很难会对这二十年里共处的人
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>24日</title>
+    <link href="http://igonejack.github.io/2016/10/24/24%E6%97%A5/"/>
+    <id>http://igonejack.github.io/2016/10/24/24日/</id>
+    <published>2016-10-23T16:54:41.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><div><font size="2">相信了人与人之间的不同是来源于所处环境的不同这句话，一直以活在自己世界时候不喜周遭，按比处世现实优雅的标尺量度行为举止。</font></div><div><font size="2"><br></font></div><div><font size="2">学生时代翻篇的工作这两年，愈发强烈感触自身生活出了状况，不知何时而起不再有想法，入了没有憧憬目光浮世绘。才发现高中大学工作的幻想交替过后，作一个去掉各种角色的人并未学习过生活二字。困扰的不安所在，是无趣迷茫彷徨。</font></div><div><font size="2"><br></font></div><div><font size="2">有人说，这份迷茫慌张叫青春。很多不知道的事情已经不想知道，许多未踏足的世界不再属于心中的世界，青春年少时候就过去了。山外有山，早已没有了意义。</font></div><div><font size="2"><br></font></div><div><font size="2">想是有些衰老已经应验在了心与灵性，面对云海世间，知晓了存在并不为谁而在，一些事会永远做不了，有些层次唯是无望，曾问过的问题，答案也无关紧要了。人总要在一些年纪，与过去的自己妥协。</font></div></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;相信了人与人之间的不同是来源于所处环境的不同这句话，一直以活在自己世界时候不喜周遭，按比处世现实优雅的标尺量度行为举止。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>十月</title>
+    <link href="http://igonejack.github.io/2016/10/21/%E5%8D%81%E6%9C%88/"/>
+    <id>http://igonejack.github.io/2016/10/21/十月/</id>
+    <published>2016-10-20T16:04:28.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><font size="2">秋风，清冷的哀。</font></div><div><font size="2"><br></font></div><div><font size="2">前阵子的清晨有秋特有的萧疏，日光明媚无力终于转到早安窗布。</font></div><div><font size="2"><br></font></div><div><span style="font-size: small;">九月来临，九月来去，又一年，是无知无味，回想不起来是从那一天开始，心已变得僵硬。大概是陈绮贞那句词，早晨起来就要去上班。</span><font size="2">当时一起秋风凄凉，一看秋风拂水落秋叶流眼泪的敏感，记忆中并不那么好却又想重过的一段时光。自己有许多的记忆画面，停留在了那些年的秋季，苟且至偶尔厌恶异常时可聊以慰藉。</font><span style="font-size: small;">大家年少时都犯了以为得到了什么后才能有快乐的傻。</span></div><div><br></div><div><font size="2">很难再感动于曾经的感动，是一个善感者年龄渐大时的代价。十月回了一趟家乡，陌生的家乡和熟悉的一切。</font></div><div><font size="2"><br></font></div><div><font size="2">昨天今天秋雨，是泥泞与冷漠。而今日晚霞壮丽，多几分记忆与画面感。</font></div>我肚子疼得在地上打滚，班里老师让回家时，我从地上爬起来忍着疼，把书整整齐齐一本本放好到书包才走的事。<div><font size="2"><br></font></div><div><font size="2">她说我从小就细致。我只觉得是因成长过程中的拥有特别少，或只是从小亲物不喜人的性格体现。</font></div><div><font size="2"><br></font></div><div><font size="2">为了把事情做好，常会投入太多的精力时间，做不好时也很内疚。</font></div><div><font size="2"><br></font></div><div><font size="2">对审美的追求也会影响我对人的好感，毕竟很多人在自身或环境的审美上并不合格。不想给人压力的同时</font><span style="font-size: small;">也不想给人失望。</span></div><div><font size="2"><br></font></div><div><font size="2">乃至有时也遗憾于有些事情并不是一个人的投入就足够的，很大程度的要需要周遭和运气。</font></div><div><font size="2"><br></font></div><div><font size="2">只是过了二十五岁之后，理性上对这些并不陌生，也看得很开。</font></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;font size=&quot;2&quot;&gt;秋风，清冷的哀。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;前阵子的清晨有秋特有的萧疏，日光明媚无力终于转到早安窗布。&lt;/font&gt;&lt;/div&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>中秋后</title>
+    <link href="http://igonejack.github.io/2016/10/07/%E4%B8%AD%E7%A7%8B%E5%90%8E/"/>
+    <id>http://igonejack.github.io/2016/10/07/中秋后/</id>
+    <published>2016-10-07T05:14:57.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><div><font size="2">天秋凉下来了，气温是不比过去夏月低的，但大不同于空气，是清凉干燥而令人爽快。</font></div><div><font size="2"><br></font></div><div><font size="2">联想起来，广州的秋，大约就是北方人所描述的那儿的夏吧：是阳光的热而不是空气的闷，阴凉处就是阴凉的。</font></div><div><font size="2"><br></font></div><div><font size="2">夏季的闷热总让人因不想睡而熬夜，头昏沉不愿动脑子，呼吸急促而身心不畅，这是最厌恶的人的状态。中秋过后的秋季，随处可以看见的湖水秋光，万里无云，总太令人想开心，去珍惜生活与年轻时候。</font></div></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;天秋凉下来了，气温是不比过去夏月低的，但大不同于空气，是清凉干燥而令人爽快。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;联想起来，广州
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>九月</title>
+    <link href="http://igonejack.github.io/2016/09/05/%E4%B9%9D%E6%9C%88/"/>
+    <id>http://igonejack.github.io/2016/09/05/九月/</id>
+    <published>2016-09-04T16:09:49.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><div><font size="2">今年以来花了约一两万改善生活，最满意的是iPad和电动牙刷。前者屏幕大方便阅读，尺寸沉难以操作，适合阅读，尽管轻轻一摔屏便裂了。后者习惯了回不去。</font></div><div><font size="2"><br></font></div><div><font size="2">其中花了五六千升级机器，可以玩一些第九艺术的电子游戏，起初只是太喜欢GTA5这款2014年初见，惊叹老美科技之强大的作品。</font></div><div><font size="2"><br></font></div><div><font size="2">物质的丰富度已达到了简约习性的上限，不愿再增加自己生活的复杂度，升级代替购置，大概是从求量到求质转变的开始。</font></div><div><font size="2"><br></font></div><div><font size="2">喜欢看看外面的世界是一个人的优秀特质，每天都要追求新鲜感，日子才不会被遗忘，这是工作后的感想。现在的我甚至想不起自己上周一做了什么，只会时时感慨时光飞逝，生涯一片空白，是每天生活工作内容太雷同的缘故。</font></div><div><font size="2"><br></font></div><div><font size="2">前不久接触到一个观点，高质量的生活方式，是在有序的框架中保持求新。没有规律严格的习惯会堕落会混乱，如高三学生考上大学后迅速养成的熬夜习惯一般，是年轻没有自控力。而若没有求新的爱好，则会日复一日，在自身的层次停滞住不再上升。</font></div><div><font size="2"><br></font></div><div><font size="2">我想现在的日子现状，是一个需要改进的信号。</font></div><div><font size="2"><br></font></div><div><font size="2">人际方面，始终学不会和家人间的好好说话。今晚教大我四岁的哥哥用支付宝，一直以为自己脾气很好，真到和家人为数不多的几次沟通时会是那么急躁，把平时深藏于心的各种情商各种讲话方式抛于脑后，无耻可憎。</font></div><div><font size="2"><br></font></div><div><font size="2">事后反省那个不像自己的人，是不是把只身在城市生活，多年来潜意识里积攒的各种无奈各种痛苦，日常里过于隐藏着的太多压抑，寻到了发泄的时机与源头。理解了多少银屏上演的，很努力很上进的人，终究会在面临到长期负担着的现实时，大哭大闹痛哭失声。”为什么不能为什么是我，要这么努力，而被照顾的一方却一点不长进不能独立，被照顾者的不能转为要求照顾者的超能，流泪激动无奈，歇斯底里，大喊，太累了，我太累了。”</font></div><div><font size="2"><br></font></div><div><font size="2">九月是我最喜爱的季节，二零一六年的它又到了。会想起学生时代的那些九月，是炎热，是夕阳红彤彤的颜色，那是初见感动，是漂亮美好的记忆画面。也是深秋的凄美的心绪初时。曾经是那么文性和敏感的时候，常常每一句诗词歌赋都要触及心底，在秋风拂面的傍晚夜空，一个人在天台，在湖边，静坐散步，憧憬着憧憬，忘记了整个世界。往事随风而去。我曾经跟一个女生说过，我要写出伟大的作品，像一个艺术家那样。</font></div></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;今年以来花了约一两万改善生活，最满意的是iPad和电动牙刷。前者屏幕大方便阅读，尺寸沉难以操作，适合阅读，尽管轻轻一摔屏便裂了。后者习惯了回不去。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;2&quot;&gt;&lt;br&gt;&lt;/fon
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>八月</title>
+    <link href="http://igonejack.github.io/2016/08/21/%E5%85%AB%E6%9C%88/"/>
+    <id>http://igonejack.github.io/2016/08/21/八月/</id>
+    <published>2016-08-21T15:12:48.000Z</published>
+    <updated>2018-04-02T16:15:33.440Z</updated>
+    
+    <content type="html"><![CDATA[<div><font size="2">八月天如期很热，<span style="line-height: 1.5;">偶尔的台风天气也比往年糟糕些，好的台风天应是风起云转而不降水的，是在远处登陆的影响，空气如秋风来临。</span><span style="line-height: 19.5px;">已不是穷学生穷学校艰苦的环境，倒还有冷气能维持宅居的舒适感，可能今年的秋季会来得不那么美妙。</span></font></div><div><font size="2"><br></font></div><div><font size="2">日子晃悠到了八月九月，很快又该是悲伤季节，从高中起大约每一年的十月末起至十一二月，会有莫名持续的悲悯心情。回想之前岁月历历在目，<span style="line-height: 19.5px;">唯是去年，许是忙于眼前，忘记了何种心境。</span></font></div><div><font size="2"><span style="line-height: 19.5px;"><br></span></font></div><div><font size="2"><span style="line-height: 19.5px;">这是很期望享有的一些日子，能让自身感受生命的内质不泯，没有夕阳下的奔跑，还有夜半听雨的淅淅沥沥内心珍藏。</span></font></div><div><span style="line-height: 19.5px;"><font size="2"><br></font></span></div><div><font size="2"><span style="line-height: 19.5px;">二零一六年至今似乎有所成长，又感觉并没有，大概就是生活吧，现实总不如所想，也该看透这一点了，安分于平凡。</span></font></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div&gt;&lt;font size=&quot;2&quot;&gt;八月天如期很热，&lt;span style=&quot;line-height: 1.5;&quot;&gt;偶尔的台风天气也比往年糟糕些，好的台风天应是风起云转而不降水的，是在远处登陆的影响，空气如秋风来临。&lt;/span&gt;&lt;span style=&quot;line-heigh
       
     
     </summary>
