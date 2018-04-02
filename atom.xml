@@ -5,9 +5,9 @@
   <subtitle>Everything I love.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://igonejack.github.io/"/>
   <updated>2018-04-02T12:11:31.559Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://igonejack.github.io/</id>
   
   <author>
     <name>有爱君</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/04/02/hello-world/"/>
-    <id>http://yoursite.com/2018/04/02/hello-world/</id>
+    <link href="http://igonejack.github.io/2018/04/02/hello-world/"/>
+    <id>http://igonejack.github.io/2018/04/02/hello-world/</id>
     <published>2018-04-02T12:11:31.558Z</published>
     <updated>2018-04-02T12:11:31.559Z</updated>
     
