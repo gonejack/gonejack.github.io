@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://igonejack.github.io/"/>
-  <updated>2018-04-02T12:11:31.559Z</updated>
+  <updated>2018-04-02T13:38:51.148Z</updated>
   <id>http://igonejack.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>二十八日</title>
+    <link href="http://igonejack.github.io/2018/03/28/%E4%BA%8C%E5%8D%81%E5%85%AB%E6%97%A5/"/>
+    <id>http://igonejack.github.io/2018/03/28/二十八日/</id>
+    <published>2018-03-27T16:29:18.000Z</published>
+    <updated>2018-04-02T13:38:51.148Z</updated>
+    
+    <content type="html"><![CDATA[<p>每一天我们都可以在网络上认识一些人。</p><p>我最近在网上认识了一位，她笑起来很开心，语言里永远乐观。</p><p>一个人的经历可以隐藏得很深，但不知是不是二零一八年的原因，我觉得我的观察力强了一些，会开始发现一些平时不会注意的东西。</p><p>譬如一个人基本的年龄，从小的出身，和社会的过往。</p><p>原来微笑的后面可以有好多经历，也可以本人都未曾发觉。</p><p>从最低起点的出发，到暂时的人生高峰，又再回归现实的冷漠。</p><p>看不到她哭的时候我很担心，因为她始终是一个感情纯真的女孩。</p><p>每日忙碌的生活中抽出时间去关心下其他人的生活原来都很有收获。才发觉自己的生活其实很简单。</p><p>我希望有一天我也是一个感情纯真的人。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;每一天我们都可以在网络上认识一些人。&lt;/p&gt;
+&lt;p&gt;我最近在网上认识了一位，她笑起来很开心，语言里永远乐观。&lt;/p&gt;
+&lt;p&gt;一个人的经历可以隐藏得很深，但不知是不是二零一八年的原因，我觉得我的观察力强了一些，会开始发现一些平时不会注意的东西。&lt;/p&gt;
+&lt;p&gt;譬如一个人基本的
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://igonejack.github.io/2018/04/02/hello-world/"/>
-    <id>http://igonejack.github.io/2018/04/02/hello-world/</id>
-    <published>2018-04-02T12:11:31.558Z</published>
-    <updated>2018-04-02T12:11:31.559Z</updated>
+    <link href="http://igonejack.github.io/2015/03/20/hello-world/"/>
+    <id>http://igonejack.github.io/2015/03/20/hello-world/</id>
+    <published>2015-03-19T16:00:00.000Z</published>
+    <updated>2018-04-02T13:35:09.942Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
