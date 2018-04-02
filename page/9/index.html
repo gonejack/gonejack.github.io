@@ -161,6 +161,46 @@
     <header class="post-header">
       <h1 class="post-title">
         
+          <a class="post-link" href="/2013/08/17/Goagent-支持-Dropbox-的简单方法/">Goagent 支持 Dropbox 的简单方法</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2013-08-17
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+
+        
+          <p><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;">当年金山快盘一出来，Dropbox 在国内即可就被墙了，后来过了一年多，Dropbox 又可以用了，不过需要 HTTPS 连接，HTTP 的连接会被中断。这样导致的后果是 Dropbox 客户端可以上传数据，但无法接收到来自服务器实时更新的信息，因为上传数据走的是 HTTPS 加密，而事实更新走的是 HTTP。</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;"><br></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;">后来月光博客发了篇文章，解决这个问题，方法是使用一个软件把 Dropbox 的加密数据与非加密数据分开，加密数据直连，非加密数据发往 Goagent 去代理。（为什么不能把全部数据都用 Goagent 代理呢？因为 Goagent 代理不了 Dropbox 的加密数据，会让 Dropobx 提示网络错误。）</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;"><br></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;">但这个方法很麻烦，很不方便。</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;"><br></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;">Goagent 3.0 出来的时候，带出了 HOST 功能，作者似乎是为了 Facebook 上传与观看 Youtube 直播而开发的这个功能。原理很简单，就是根据配置，发往特定主机特定端口的数据包绕开代理，直连远程服务器。</span><br><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;"><br></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;">我当时一看到，马上觉得此功能可用来解决 Dropbox 长久以来在国内不能实时更新的问题，</span><span style="font-size: small;">试了下，添加正则表达式 .+.dropbox.com:443 到 Goagent 的配置文件里。</span><br><span style="font-size: small;"><br></span><span style="font-size: small;">意思是：</span><br><span style="font-size: small;"><br></span><span style="font-size: small;">往来于本地与 <strong>任意前缀.dropbox.com</strong>&nbsp;主机的&nbsp;<strong>443端口&nbsp;</strong>的数据包，不代理走直连。</span><br><span style="font-size: small;"><br></span><span style="font-size: small;">443端口是 HTTPS 连接专用的端口，即加密数据包的目的地与来源地。</span><br><span style="font-size: small;"><br></span><span style="font-size: small;"><br></span><span style="font-size: small;">这样，把 Dropobx 网络设置里的代理设置为 Goagent 的代理地址，Dropbox 客户端共会收发两种数据包，一种是 HTTP 的实时更新信息，可以被 Goagent 代理。另一种是 HTTPS 数据包，Goagent 代理不了，但会被上面的正则表达式识别出来而直接转发掉，不去代理。</span><br><span style="font-size: small;"><br></span><span style="font-size: small;">这样 Dropbox 就能正常接受到加密数据与非加密数据，正常工作了。</span><br><span style="font-size: small;"><br></span><span style="font-size: small;">一击即中，添加了之后。Dropbox 实时更新这拖了好几年的问题终于得到较好的解决办法了。</span><br><span style="font-size: small;"><br></span><span style="font-size: small;">上 Goagent 论坛发了个帖，似乎没多少人关注。但过几天后作者默默把这配置添加到默认配置里了。</span><br><span style="font-size: small;"><br></span><span style="font-size: small;">后来电脑坏了，一直用手机。收到 Gmail 邮件，问我这方法适不适用于 Mac 版的 Dropbox，我说适合的。但对方说无法正常工作，我觉得这应该是 Goagent 的问题了。</span><br><span style="font-size: small;"><br></span><span style="font-size: small;">后来 Goagent 更新说要改为 .+.dropbox.com\:443，以解决在 Mac 上的兼容性问题。看来的确是 Goagent 自身的问题，冒号照理来说是不需要斜杠的。</span><br><span style="font-size: small;"><br></span><span style="font-size: small;">今天去看了，Goagent 的开发者又照着这样的办法，把 Copy 网盘，Box 网盘的地址也添上去了。查了一下&nbsp; Goagent 的代码历史，发现原来作者原先有支持 Dropbox 的，只是后来删掉了，以至于到我手里的版本上没有这一配置。后来我察觉到这一功能，拿出来发帖后他又添加上去了，不知道作者怎么想的。</span></p>
+
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
           <a class="post-link" href="/2013/08/14/2013年8月14日/">2013年8月14日</a>
         
       </h1>
@@ -496,45 +536,6 @@
 
         
           <div><div><div><font size="2">我不断地寻找，有你的世界在哪里？</font></div><div><font size="2"><br></font></div><div><font size="2">我不断地洗澡，油腻的师姐在哪里？</font></div><div><font size="2"><br></font></div><div><font size="2">天气一热，生活全盘乱，作息颠倒，日夜不分，一天只能睡两三个钟，头脑昏沉，坐立难安。一日一餐，反正味觉消失，胸闷气短，总之活不了了。</font></div><div><font size="2"><br></font></div><div><font size="2">记得去年我是有心情写篇散文来矫情一番的，不知为何现在怎么也找不着那种愿意：</font></div><div><font size="2"><br></font></div><div><font size="2">今日广州之天气炎热，是有融化人的趋向的。断是天火从天而落，未必会有如此要人命的收效。南风吹息未曾带来一丝凉快，反倒温存不少。早晨的光是明亮而毒辣的，照晒皮肤偶尔是有疼痛感的。中午之阳光则是实在之火热，除去给我油汗相交杂闷浴，亦是对人身心活性之大考验，在这不人道之天气里人性许是也会减少大半，能去课上的学生该是极大意志能力的。若意志如我者，大概是宁为地上匍匐摊躺之泥虫，亦不愿遭受此生命摧残的。</font></div><div><font size="2"><br></font></div><div><font size="2">此时夜已过半寻，料定此晚上是夜长梦多，竹席是准备好了的，铺地，倒下，便是与楼板之亲密接触。这一身的慵懒华丽，瘫软在这人肉与冰凉接触之中，蚊虫更来共舞，梦里最佳有乌云作伴，窗帘扬扬，到底是欠缺了风铃。作罢，由他去吧。</font></div></div></div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/2013/05/21/雨/">雨</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2013-05-21
-        </span>
-        
-        
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-
-        
-          <div><div><div><font size="2">昨晚，今晚，都下大雨。记忆里这滂沱大雨到来之前，是该有长时间，春日，烟雨的朦胧氤氲。今看来是，春季已过而我一无所知，如小石清泉游鱼，水质清明，心绪不知江海大流。</font></div><div><font size="2"><br></font></div><div><font size="2">大雨滂沱，心却萧然，风云聚散，天地苍茫。碌碌之身怀悠悠之心，何其不快。</font></div></div></div>
         
       
     </div>
