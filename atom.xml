@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>浅浅</title>
-  
+  <icon>https://www.gravatar.com/avatar/e5360402a2d803228dd88de5a516f499</icon>
   <subtitle>Everything I love.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -11,7 +11,7 @@
   
   <author>
     <name>Live</name>
-    
+    <email>igonejack@gmail.com</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
