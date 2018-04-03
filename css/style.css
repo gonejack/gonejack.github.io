@@ -33,6 +33,9 @@
     right: 0;
     left: 0; }
 
+.gitment-markdown {
+  font-size: 14px !important; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
