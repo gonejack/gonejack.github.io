@@ -310,9 +310,6 @@
         function ShowHyperComments(){
           
             document.getElementById("gitment-display-button").innerText = "Loading...";
-            setTimeout(function() {
-                document.getElementById("gitment-display-button").style.display = "none";
-            }, 3000)
           
           document.getElementById("hypercomments_widget").style.display = "block";
           _hcwp = window._hcwp || [];
@@ -323,6 +320,11 @@
           var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
           var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
           hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/103318/"+lang+"/widget.js";
+          hcc.onload = function () {
+            
+                document.getElementById("gitment-display-button").style.display = "none";
+            
+          }
           var s = document.getElementsByTagName("script")[0];
           s.parentNode.insertBefore(hcc, s.nextSibling);
           })();
