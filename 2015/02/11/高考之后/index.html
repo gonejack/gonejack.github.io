@@ -292,7 +292,7 @@
   
     <script type="text/javascript">
         function ShowHyperComments(){
-          document.getElementById("gitment-display-button").innerText = "Loading...";
+          
           document.getElementById("hypercomments_widget").style.display = "block";
           _hcwp = window._hcwp || [];
           _hcwp.push({widget:"Stream", widget_id: 103318});
@@ -304,12 +304,11 @@
           hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/103318/"+lang+"/widget.js";
           var s = document.getElementsByTagName("script")[0];
           s.parentNode.insertBefore(hcc, s.nextSibling);
-          document.getElementById("gitment-display-button").style.display = "none";
           })();
         }
 
         
-        ShowHyperComments();
+            ShowHyperComments();
         
      </script>
 
