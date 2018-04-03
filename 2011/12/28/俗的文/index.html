@@ -319,7 +319,7 @@
                   document.getElementById("gitment-display-button").style.display = "none";
                   document.getElementById("gitment-container").style.display = "block";
                   var gitment = new Gitment({
-                      id: document.location.href,
+                      id: decodeURI(document.location.href),
                       owner: 'gonejack',
                       repo: 'gonejack.github.io',
                       oauth: {
