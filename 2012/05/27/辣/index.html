@@ -212,12 +212,12 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+        
+            <div onclick="ShowGitment()" id="gitment-display-button">Leave a message</div>
+            <div id="gitment-container" style="display:none" class="menu-item">
+                <noscript>For leaving comments, should JavaScript enabled.</noscript>
+            </div>
+        
     
   </div>
 
@@ -252,10 +252,6 @@
       
     
       
-        
-          <a href="https://igonejack.tumblr.com" class="iconfont icon-tumblr" title="tumblr"></a>
-        
-      
     
       
     
@@ -268,7 +264,7 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+    Render by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
   </span>
   <span class="division">|</span>
   <span class="theme-info">
@@ -300,25 +296,34 @@
 
     
   
-  <script type="text/javascript">
-    var disqus_config = function () {
-        this.page.url = 'http://igonejack.github.io/2012/05/27/辣/';
-        this.page.identifier = '2012/05/27/辣/';
-        this.page.title = '辣';
-    };
-    (function() {
-    var d = document, s = d.createElement('script');
-
-    s.src = '//gonejack.disqus.com/embed.js';
-
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();  
-  </script>
-
   
 
   
+  
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    
+        <script type="text/javascript">
+              function ShowGitment(){
+                  document.getElementById("gitment-display-button").style.display = "none";
+                  document.getElementById("gitment-container").style.display = "block";
+                  var gitment = new Gitment({
+                      id: document.location.href,
+                      owner: 'gonejack',
+                      repo: 'gonejack.github.io',
+                      oauth: {
+                          client_id: 'b8e0f910f43c3be170e6',
+                          client_secret: '6c6d8ad108011b84858227a2b900de6b2d221aba',
+                      }});
+                  gitment.render('gitment-container');
+              }
+         </script>
+    
+
 
 
 
