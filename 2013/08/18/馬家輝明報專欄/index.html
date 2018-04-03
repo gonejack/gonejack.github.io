@@ -1233,7 +1233,7 @@
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hcc, s.nextSibling);
             })();
-        }();
+        };
 
         LoadHyperComments();
 
@@ -1242,7 +1242,7 @@
             document.getElementById("gitment-display-button").innerText = "Loading...";
             setTimeout(function() {
                 document.getElementById("gitment-display-button").style.display = "none";
-            }, 1000);
+            }, 500);
           
           document.getElementById("hypercomments_widget").style.display = "block";
         }
