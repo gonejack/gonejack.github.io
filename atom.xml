@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://igonejack.github.io/"/>
-  <updated>2018-04-30T02:54:51.309Z</updated>
+  <updated>2018-04-30T03:00:30.153Z</updated>
   <id>http://igonejack.github.io/</id>
   
   <author>
@@ -20,21 +20,18 @@
     <title></title>
     <link href="http://igonejack.github.io/2018/04/30/%E6%88%91%E7%9C%8B%E5%88%B0%E7%9A%84%20MacBook%20Pro/"/>
     <id>http://igonejack.github.io/2018/04/30/我看到的 MacBook Pro/</id>
-    <published>2018-04-30T02:54:51.309Z</published>
-    <updated>2018-04-30T02:54:51.309Z</updated>
+    <published>2018-04-30T03:00:30.153Z</published>
+    <updated>2018-04-30T03:00:30.153Z</updated>
     
-    <content type="html"><![CDATA[<p>###好的点###</p><ul><li>绝佳的工业设计，单放桌面便是装饰</li><li>对程序员而言重要的 Unix 环境和一整套的 Unix 命令工具</li><li>美观统一的软件界面和高质量字体和高清晰屏组合带来的视觉呈现</li><li>放心可靠的硬件质量和与之搭配的电源管理，噪音发热控制。这一点对曾被 Windows 笔记本折磨甚至有心理阴影的人而言很有吸引力。</li><li>软件层上对隐私和权限的重视</li></ul><h3 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h3><ul><li>部分自带应用层软件的工程质量堪忧，如输入法，邮件客户端，相片管理，音乐播放。尤其邮件客户端，经常弄丢用户邮件。</li><li>部分自带应用层软件的设计和质量都堪忧，无论 Docker 还是 LaunchPad 这两套任务切换工具，还是 Finder 这一文件管理工具，设计和质量都需要更多改进调优。</li><li>硬件性能不足，尤其我用惯台式机器，常对前者性能略感遗憾。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="好的点"><a href="#好的点" class="headerlink" title="好的点"></a>好的点</h3><ul><li>绝佳的工业设计，单放桌面便是装饰</li><li>对程序员而言重要的 Unix 环境和一整套的 Unix 命令工具</li><li>美观统一的软件界面和高质量字体和高清晰屏组合带来的视觉呈现</li><li>放心可靠的硬件质量和与之搭配的电源管理，噪音发热控制。这一点对曾被 Windows 笔记本折磨甚至有心理阴影的人而言很有吸引力。</li><li>软件层上对隐私和权限的重视</li></ul><h3 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h3><ul><li>部分自带应用层软件的工程质量堪忧，如输入法，邮件客户端，相片管理，音乐播放。尤其邮件客户端，经常弄丢用户邮件。</li><li>部分自带应用层软件的设计和质量都堪忧，无论 Docker 还是 LaunchPad 这两套任务切换工具，还是 Finder 这一文件管理工具，设计和质量都需要更多改进调优。</li><li>硬件性能不足，尤其我用惯台式机器，常对前者性能略感遗憾。</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;###好的点###&lt;/p&gt;
-&lt;ul&gt;
+        &lt;h3 id=&quot;好的点&quot;&gt;&lt;a href=&quot;#好的点&quot; class=&quot;headerlink&quot; title=&quot;好的点&quot;&gt;&lt;/a&gt;好的点&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;绝佳的工业设计，单放桌面便是装饰&lt;/li&gt;
-&lt;li&gt;对程序员而言重要的 Unix 环境和一整套的 Unix 命令工具&lt;/li&gt;
-&lt;li&gt;美观统一的软件界面和高质量字体和高清晰屏组合带来的视觉呈现&lt;/li&gt;
-&lt;li&gt;放心可靠的硬件
+&lt;li&gt;对程序员而言重要的 Unix 环境和一整套的 Unix 命令工具&lt;/
       
     
     </summary>
