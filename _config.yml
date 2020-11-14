@@ -101,7 +101,7 @@ ignore:
 theme: cactus
 theme_config:
   colorscheme: classic
-  rss:
+  rss: atom.xml
   nav:
     home: /
     articles: /archives/
