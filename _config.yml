@@ -108,6 +108,7 @@ theme_config:
     about: /about/
   projects_url: https://github.com/gonejack
   social_links:
+    github: https://github.com/gonejack
     mail: mailto:igonejack@gmail.com
   tags_overview: true
   post:
