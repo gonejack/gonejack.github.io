@@ -108,6 +108,10 @@ theme_config:
     about: /about/
   projects_url: https://github.com/gonejack
   social_links:
+    mail: mailto:igonejack@gmail.com
+  tags_overview: true
+  post:
+    show_updated: true
   gravatar:
     email: igonejack@gmail.com
     hash: e5360402a2d803228dd88de5a516f499

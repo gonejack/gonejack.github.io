@@ -1,7 +1,7 @@
 [
     {
-       "name":"Hexo",
-       "url":"https://hexo.io/",
-       "desc":"A fast, simple & powerful blog framework"
+       "name":"rss-epub",
+       "url":"https://github.com/gonejack/rss-epub",
+       "desc":"Archive RSS feeds to epub books."
     }
 ]
