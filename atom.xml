@@ -6,7 +6,7 @@
   <link href="http://gonejack.github.io/atom.xml" rel="self"/>
   
   <link href="http://gonejack.github.io/"/>
-  <updated>2020-11-14T20:37:58.508Z</updated>
+  <updated>2020-12-01T04:00:34.283Z</updated>
   <id>http://gonejack.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试的方案</title>
+    <link href="http://gonejack.github.io/2020/12/01/%E6%B5%8B%E8%AF%95%E7%9A%84%E6%96%B9%E6%A1%88/"/>
+    <id>http://gonejack.github.io/2020/12/01/%E6%B5%8B%E8%AF%95%E7%9A%84%E6%96%B9%E6%A1%88/</id>
+    <published>2020-12-01T03:59:36.000Z</published>
+    <updated>2020-12-01T04:00:34.283Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Chrome-87-新功能：标签页分组，可自动分组同网站下标签页"><a href="#Chrome-87-新功能：标签页分组，可自动分组同网站下标签页" class="headerlink" title="Chrome 87 新功能：标签页分组，可自动分组同网站下标签页"></a>Chrome 87 新功能：标签页分组，可自动分组同网站下标签页</h1><p>2020 年的最后一个版本 <a href="https://www.appinn.com/chrome-87-released/">Chrome 87</a> 新增了很多实用性的功能，在支持 <a href="https://www.appinn.com/chrome-87-search-tabs-in-addressbar/">地址栏切换标签页</a> 之后， <strong>标签页分组</strong> 功能页正式上线了，并且还可以为 <strong>同网站</strong> 自动创建标签页分组。@Appinn </p><p><img src="assets/image1.jpeg"></p><p>倒也不是吹捧，见过这么多分组扩展，青小蛙的确觉得 Chrome 官方的标签页分组方式更科学一些。</p><h2 id="标签页分组"><a href="#标签页分组" class="headerlink" title="标签页分组"></a>标签页分组</h2><p>升级至 Chrome 87 最新版本之后，就自动拥有了这个功能，只需要对着标签页右键，选择 <strong>向新群组中添加标签页</strong> ，即可创建分组： </p><p><img src="assets/image2.jpeg"></p><p>之后便可在其他标签页标题右键时，同样选择 <strong>向新群组中添加标签页</strong> 就能移动至分组中： </p><p><img src="assets/image3.jpeg"></p><p>之后，还可以对分组命名，并标记颜色，如果未命名，分组将以小圆点的方式表示，命名后就如下图，点击该名称还能折叠分组：</p><p><img src="assets/image4.jpeg"></p><h2 id="自动分组"><a href="#自动分组" class="headerlink" title="自动分组"></a>自动分组</h2><p>自动分组目前还属于实验性功能，需要在 Chrome://flags 中开启：</p><p><img src="assets/image5.jpeg"></p><p>开启后，新打开的标签页如果是同网站下，就会自动创建分组。</p><hr><h2 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h2><ul><li><a href="https://www.appinn.com/lzzxt-game4/">3000时代来临，赢空间活动继续</a></li><li><a href="https://www.appinn.com/chrome-4-extensions-setup/">Chrome 4.0，用扩展武装它</a></li><li><a href="https://www.appinn.com/save-pinned-tabs-for-chrome/">Save Pinned Tabs – 保存 Chrome 当前固定标签页、分组、同步</a></li><li><a href="https://www.appinn.com/lzzxt-game3/">赢空间游戏新高 3432 分</a></li><li><a href="https://www.appinn.com/automatic-scrolling-tabs-for-chrome/">求一个脱离鼠标仍可网页自动向下滚动的 Chrome 插件</a></li></ul><hr><p><a href="http://www.appinn.com/copyright/?&amp;&amp;">©</a> 2019 青小蛙 for <a href="http://www.appinn.com/?&amp;&amp;">小众软件</a> | <a href="http://www.appinn.com/join-us/?&amp;&amp;">加入我们</a> | <a href="https://meta.appinn.com/c/faxian/?&amp;&amp;">投稿</a> | <a href="http://www.appinn.com/feeds-subscribe/?&amp;&amp;">订阅指南</a><br>3659b075e72a5b7b1b87ea74aa7932ff<br><a href="https://www.appinn.com/chrome-87-tabs-group/#comments">点击这里留言、和原作者一起评论</a> <a href="https://www.appinn.com/chrome-87-tabs-group/">https://www.appinn.com/chrome-87-tabs-group/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Chrome-87-新功能：标签页分组，可自动分组同网站下标签页&quot;&gt;&lt;a href=&quot;#Chrome-87-新功能：标签页分组，可自动分组同网站下标签页&quot; class=&quot;headerlink&quot; title=&quot;Chrome 87 新功能：标签页分组，可自动分组同网站</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -93,11 +113,15 @@
     <link href="http://gonejack.github.io/2020/11/14/abc/"/>
     <id>http://gonejack.github.io/2020/11/14/abc/</id>
     <published>2020-11-14T19:49:28.000Z</published>
-    <updated>2020-11-14T20:37:58.507Z</updated>
+    <updated>2020-12-01T03:53:10.936Z</updated>
     
     
     
     
+    <category term="学习笔记" scheme="http://gonejack.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="日本语" scheme="http://gonejack.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AF%AD/"/>
     
   </entry>
   
