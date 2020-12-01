@@ -248,3 +248,4 @@ https://docs.google.com/document/d/1CxgUBPlx9iJzkz9JWkb6tIpTe5q32QDmz8l0BouG0Cw/
 
 http://npat-efault.github.io/programming/2016/10/10/escape-analysis-and-interfaces.html
 
+[golang 逃逸分析(https://studygolang.com/articles/21880)
