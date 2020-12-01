@@ -6,7 +6,7 @@
   <link href="http://gonejack.github.io/atom.xml" rel="self"/>
   
   <link href="http://gonejack.github.io/"/>
-  <updated>2020-12-01T04:53:31.940Z</updated>
+  <updated>2020-12-01T04:52:09.853Z</updated>
   <id>http://gonejack.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>go程序初始化顺序</title>
-    <link href="http://gonejack.github.io/2020/12/01/go%E7%A8%8B%E5%BA%8F%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F/"/>
-    <id>http://gonejack.github.io/2020/12/01/go%E7%A8%8B%E5%BA%8F%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F/</id>
+    <link href="http://gonejack.github.io/2020/12/01/%E6%8A%80%E6%9C%AF/go%E7%A8%8B%E5%BA%8F%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F/"/>
+    <id>http://gonejack.github.io/2020/12/01/%E6%8A%80%E6%9C%AF/go%E7%A8%8B%E5%BA%8F%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F/</id>
     <published>2020-12-01T04:51:14.000Z</published>
-    <updated>2020-12-01T04:53:31.940Z</updated>
+    <updated>2020-12-01T04:52:09.853Z</updated>
     
     <content type="html"><![CDATA[<p>在一个 go 程序中通常包含：包、常量、变量、init()、main()等元素，如果同时存在多个包，包之间存在依赖关系，每个包中存在多个 init 函数，每个文件中存在多个 init 函数，那么问题来了，他们之间的执行顺序是什么样的？通过本文我们来对它们之间的执行顺序做尽可能详尽的说明。如有不正之处，欢迎批评指正。</p><h3 id="包的执行顺序"><a href="#包的执行顺序" class="headerlink" title="包的执行顺序"></a>包的执行顺序</h3><ul><li>在 main 包中的 go 文件默认总是会被执行</li><li>同包下的不同 go 文件，按照文件名“从小到大”排序顺序执行</li><li>其他的包只有被 main 包 import 才会执行，按照 import 的先后顺序执行</li><li>被递归 import 的包的初始化顺序与 import 顺序相反，例如：导入顺序 main –&gt; A –&gt; B –&gt; C，则初始化顺序为 C –&gt; B –&gt; A –&gt; main</li><li>一个包被其它多个包 import，但只能被初始化一次</li><li>main 包总是被最后一个初始化，因为它总是依赖别的包</li><li>避免出现循环 import，例如：A –&gt; B –&gt; C –&gt; A</li></ul><p>go 程序的初始化顺序见下图：</p><p><img src="assets/20170831112523944.jpeg"></p><h3 id="init-和-main-函数"><a href="#init-和-main-函数" class="headerlink" title="init 和 main 函数"></a>init 和 main 函数</h3><p>init()、main() 是 go 语言中的保留函数，两个函数在 go 语言中的区别如下：<br>相同点：</p><ul><li>两个函数在定义时不能有任何的参数和返回值</li><li>该函数只能由 go 程序自动调用，不可以被引用</li></ul><p>不同点：</p><ul><li>init 可以应用于任意包中，且可以重复定义多个。</li><li>main 函数只能用于 main 包中，且只能定义一个。</li></ul><p>两个函数的执行顺序：</p><ul><li>对同一个 go 文件的 init( ) 调用顺序是从上到下的</li><li>对同一个 package 中的不同文件，将文件名按字符串进行“从小到大”排序，之后顺序调用各文件中的init()函数</li><li>对于不同的 package，如果不相互依赖的话，按照 main 包中 import 的顺序调用其包中的 init() 函数</li><li>如果 package 存在依赖，调用顺序为最后被依赖的最先被初始化，例如：导入顺序 main –&gt; A –&gt; B –&gt; C，则初始化顺序为 C –&gt; B –&gt; A –&gt; main，一次执行对应的 init 方法。</li></ul><h3 id="常量、变量、init-、main"><a href="#常量、变量、init-、main" class="headerlink" title="常量、变量、init()、main()"></a>常量、变量、init()、main()</h3><p>在同一个文件中，常量、变量、init()、main() 依次进行初始化。</p><p><a href="https://blog.csdn.net/claram/article/details/77745665">go编程：浅析go程序初始化顺序</a></p>]]></content>
     
@@ -42,10 +42,10 @@
   
   <entry>
     <title>解决git status不能显示中文</title>
-    <link href="http://gonejack.github.io/2020/12/01/git-show-chinese-filenames/"/>
-    <id>http://gonejack.github.io/2020/12/01/git-show-chinese-filenames/</id>
+    <link href="http://gonejack.github.io/2020/12/01/%E6%8A%80%E6%9C%AF/git-show-chinese-filenames/"/>
+    <id>http://gonejack.github.io/2020/12/01/%E6%8A%80%E6%9C%AF/git-show-chinese-filenames/</id>
     <published>2020-12-01T04:39:34.000Z</published>
-    <updated>2020-12-01T04:53:31.940Z</updated>
+    <updated>2020-12-01T04:45:30.015Z</updated>
     
     <content type="html"><![CDATA[<ul><li><p>现象<br>status查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名，非常不方便。如下图：<br><img src="assets/status-dig.jpg"></p></li><li><p>原因<br>在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</p></li><li><p>解决办法<br>将git 配置文件 core.quotepath项设置为false</p><figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config —global core.quotepath false</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
@@ -69,8 +69,8 @@
   
   <entry>
     <title>Chrome 87 新功能：标签页分组，可自动分组同网站下标签页</title>
-    <link href="http://gonejack.github.io/2020/12/01/Chrome_87_%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
-    <id>http://gonejack.github.io/2020/12/01/Chrome_87_%E6%96%B0%E5%8A%9F%E8%83%BD/</id>
+    <link href="http://gonejack.github.io/2020/12/01/%E6%8A%80%E6%9C%AF/chrome_87_%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
+    <id>http://gonejack.github.io/2020/12/01/%E6%8A%80%E6%9C%AF/chrome_87_%E6%96%B0%E5%8A%9F%E8%83%BD/</id>
     <published>2020-12-01T03:59:36.000Z</published>
     <updated>2020-12-01T04:13:26.116Z</updated>
     
