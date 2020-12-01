@@ -6,7 +6,7 @@
   <link href="http://gonejack.github.io/atom.xml" rel="self"/>
   
   <link href="http://gonejack.github.io/"/>
-  <updated>2020-12-01T04:13:26.116Z</updated>
+  <updated>2020-12-01T04:41:32.184Z</updated>
   <id>http://gonejack.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决git status不能显示中文</title>
+    <link href="http://gonejack.github.io/2020/12/01/git-show-chinese-filenames/"/>
+    <id>http://gonejack.github.io/2020/12/01/git-show-chinese-filenames/</id>
+    <published>2020-12-01T04:39:34.000Z</published>
+    <updated>2020-12-01T04:41:32.184Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>现象<br>status查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名，非常不方便。如下图：<br><img src="assets/status-dig.jpg"></p></li><li><p>原因<br>在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</p></li><li><p>解决办法<br>将git 配置文件 core.quotepath项设置为false</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config —global core.quotepath false</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;现象&lt;br&gt;status查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名，非常不方便。如下图：&lt;br&gt;&lt;img src=&quot;assets/status-dig.jpg&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;原因&lt;br&gt;在默认设置下，中文文件名在工</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="http://gonejack.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="git" scheme="http://gonejack.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>Chrome 87 新功能：标签页分组，可自动分组同网站下标签页</title>
