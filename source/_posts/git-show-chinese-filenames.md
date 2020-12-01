@@ -15,6 +15,6 @@ status查看有改动但未提交的文件时总只显示数字串，显示不�
 
 * 解决办法
 将git 配置文件 core.quotepath项设置为false
-```shell
+```shell script
 git config —global core.quotepath false
 ```
