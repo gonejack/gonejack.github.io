@@ -110,7 +110,7 @@ theme_config:
   social_links:
     github: https://github.com/gonejack
     mail: mailto:igonejack@gmail.com
-  tags_overview: true
+  tags_overview: false
   post:
     show_updated: true
   gravatar:
