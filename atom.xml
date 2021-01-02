@@ -205,9 +205,9 @@
     <link href="http://gonejack.github.io/2020/12/01/%E5%BC%80%E5%8F%91/git-show-chinese-filenames/"/>
     <id>http://gonejack.github.io/2020/12/01/%E5%BC%80%E5%8F%91/git-show-chinese-filenames/</id>
     <published>2020-12-01T04:39:34.000Z</published>
-    <updated>2020-12-30T03:28:28.624Z</updated>
+    <updated>2021-01-02T04:59:20.256Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><p>现象<br>status查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名，非常不方便。如下图：<br><img src="assets/status-dig.jpg"></p></li><li><p>原因<br>在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</p></li><li><p>解决办法<br>将 git 配置文件<code>core.quotepath</code>项设置为<code>false</code></p><figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config —global core.quotepath false</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li><p>现象<br>status查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名，非常不方便。如下图：<br><img src="assets/status-dig.jpg"></p></li><li><p>原因<br>在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</p></li><li><p>解决办法<br>将 git 配置文件 <code>core.quotepath</code> 项设置为 <code>false</code></p><figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config —global core.quotepath false</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
     
       
