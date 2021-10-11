@@ -9,25 +9,25 @@
     <meta name="description" content="摘要： 学习 HTTP&#x2F;2 与 HTTP&#x2F;3。  原文： 一文读懂 HTTP&#x2F;2 及 HTTP&#x2F;3 特性 作者： 浪里行舟  Fundebug 经授权转载，版权归原作者所有。 前言HTTP&#x2F;2 相比于 HTTP&#x2F;1，可以说是大幅度提高了网页的性能，只需要升级到该协议就可以减少很多之前需要做的性能优化工作，当然兼容问题以及如何优雅降级应该是国内还不普遍使用的原因之一。 虽然 HTTP&#x2F;2 提高了网页">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一文读懂 HTTP&#x2F;2 及 HTTP&#x2F;3 特性">
-<meta property="og:url" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/index.html">
+<meta property="og:url" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/index.html">
 <meta property="og:site_name" content="0ccola.𐂂">
 <meta property="og:description" content="摘要： 学习 HTTP&#x2F;2 与 HTTP&#x2F;3。  原文： 一文读懂 HTTP&#x2F;2 及 HTTP&#x2F;3 特性 作者： 浪里行舟  Fundebug 经授权转载，版权归原作者所有。 前言HTTP&#x2F;2 相比于 HTTP&#x2F;1，可以说是大幅度提高了网页的性能，只需要升级到该协议就可以减少很多之前需要做的性能优化工作，当然兼容问题以及如何优雅降级应该是国内还不普遍使用的原因之一。 虽然 HTTP&#x2F;2 提高了网页">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-1.png">
-<meta property="og:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-2.png">
-<meta property="og:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-3.gif">
-<meta property="og:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-4.png">
-<meta property="og:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-5.png">
-<meta property="og:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-6.png">
-<meta property="og:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-7.png">
-<meta property="og:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-8.png">
-<meta property="og:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-9.png">
+<meta property="og:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-1.png">
+<meta property="og:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-2.png">
+<meta property="og:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-3.gif">
+<meta property="og:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-4.png">
+<meta property="og:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-5.png">
+<meta property="og:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-6.png">
+<meta property="og:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-7.png">
+<meta property="og:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-8.png">
+<meta property="og:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-9.png">
 <meta property="article:published_time" content="2020-12-02T08:57:35.000Z">
 <meta property="article:modified_time" content="2020-12-02T08:59:16.327Z">
 <meta property="article:author" content="John Youi">
 <meta property="article:tag" content="网络协议">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-1.png">
+<meta name="twitter:image" content="https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/assets/2019-03-06-1.png">
     
     
       
@@ -63,7 +63,7 @@
     
       <link rel="alternate" href="/atom.xml" title="0ccola.𐂂" type="application/atom+xml" />
     
-<meta name="generator" content="Hexo 5.3.0"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="max-width mx-auto px3 ltr">
     
@@ -103,17 +103,17 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&text=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&is_video=false&description=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=一文读懂 HTTP/2 及 HTTP/3 特性&body=Check out this article: http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&name=一文读懂 HTTP/2 及 HTTP/3 特性&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&t=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&text=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&is_video=false&description=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=一文读懂 HTTP/2 及 HTTP/3 特性&body=Check out this article: https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&name=一文读懂 HTTP/2 及 HTTP/3 特性&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&t=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -304,17 +304,17 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&text=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&is_video=false&description=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=一文读懂 HTTP/2 及 HTTP/3 特性&body=Check out this article: http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&name=一文读懂 HTTP/2 及 HTTP/3 特性&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&t=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&text=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&is_video=false&description=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=一文读懂 HTTP/2 及 HTTP/3 特性&body=Check out this article: https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&title=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&name=一文读懂 HTTP/2 及 HTTP/3 特性&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://gonejack.github.io/2020/12/02/%E7%AE%97%E6%B3%95%E4%B8%8E%E5%8D%8F%E8%AE%AE/http-123/&t=一文读懂 HTTP/2 及 HTTP/3 特性"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
