@@ -1,0 +1,20 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.101.0"><title>解决git status不能显示中文 | Gonejack</title><meta name=description content="Gonejack's blog"><link rel=stylesheet href=https://gonejack.github.io/css/simpleness.css><link rel=canonical href=https://gonejack.github.io/posts/%E5%BC%80%E5%8F%91/git-show-chinese-filenames/><link rel=alternate type=application/rss+xml href title=Gonejack><link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css rel=stylesheet></head><body class=container><nav class=navigation><div class=nav-left><div class="nav-item nav-title"><a href=https://gonejack.github.io/>Gonejack</a></div><div class="nav-item nav-menu"><a href=/projects/>Projects</a>
+<a href=/about/>About</a></div></div><div class="nav-item nav-right fontawesome"><a href=https://github.com/gonejack target=_blank><i title=GitHub class="fab fa-github"></i></a>
+<a href=https://gonejack.github.io/index.xml target=_blank><i title=RSS class="fas fa-rss"></i></a></div></nav><article class=post><header class=post-header><h1 style=text-align:center>解决git status不能显示中文</h1><div class=post-metadata><time datetime=2020-12-01T12:39:34Z>December 01, 2020</time> &nbsp;
+<i class="far fa-clock"></i>
+33 s
+&nbsp;
+<i class="fas fa-folder"></i>
+<a href=/categories/%E6%8A%80%E6%9C%AF>技术</a>
+&nbsp;</div></header><div class=post-text><ul><li><p>现象
+status查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名，非常不方便。如下图：
+<img src=assets/status-dig.jpg alt></p></li><li><p>原因
+在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</p></li><li><p>解决办法
+将 git 配置文件 <code>core.quotepath</code> 项设置为 <code>false</code></p></li></ul><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>git config —global core.quotepath <span style=color:#0086b3>false</span>
+</span></span></code></pre></div></div><footer class=post-footer><div class=post-tags><i class="fas fa-tags"></i>
+<a href=/tags/git>git</a>
+&nbsp;</div></footer><div class=comments><div class=comments></div></div></article><div class=foot>&copy; 2020 - 2022 &#183;
+<a href=/>Gonejack</a> &#183;
+Theme <a href=https://github.com/RainerChiang/simpleness>Simpleness</a> Powered by <a href=https://gohugo.io/>Hugo</a> &#183;
+<a href=#><i class="fas fa-chevron-up"></i></a></div></body><script src=/js/lazyload.min.js></script>
+<script>var lazyImage=new LazyLoad({container:document.getElementById("article")})</script></html>

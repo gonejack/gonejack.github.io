@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>golang on Gonejack</title><link>https://gonejack.github.io/tags/golang/</link><description>Recent content in golang on Gonejack</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 01 Dec 2020 13:23:07 +0000</lastBuildDate><atom:link href="https://gonejack.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>go逃逸分析</title><link>https://gonejack.github.io/posts/%E5%BC%80%E5%8F%91/go%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90/</link><pubDate>Tue, 01 Dec 2020 13:23:07 +0000</pubDate><guid>https://gonejack.github.io/posts/%E5%BC%80%E5%8F%91/go%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90/</guid><description>Go 逃逸分析 堆和栈 要理解什么是逃逸分析会涉及堆和栈的一些基本知识，如果忘记的同学我们可以简单的回顾一下：
+堆（Heap）：一般来讲是人为手动进行管理，手动申请、分配、释放。堆适合不可预知大小的内存分配，这也意味着为此付出的代价是分配速度较慢，而且会形成内存碎片。 栈（Stack）：由编译器进行管理，自动申请、分配、释放。一般不会太大，因此栈的分配和回收速度非常快；我们常见的函数参数（不同平台允许存放的数量不同），局部变量等都会存放在栈上。 栈分配内存只需要两个CPU指令：“PUSH”和“RELEASE”，分配和释放；而堆分配内存首先需要去找到一块大小合适的内存块，之后要通过垃圾回收才能释放。
+通俗比喻的说，栈就如我们去饭馆吃饭，只需要点菜（发出申请）&amp;ndash;》吃吃吃（使用内存）&amp;ndash;》吃饱就跑剩下的交给饭馆（操作系统自动回收），而堆就如在家里做饭，大到家，小到买什么菜，每一个环节都需要自己来实现，但是自由度会大很多。
+什么是逃逸分析 在编译程序优化理论中，逃逸分析是一种确定指针动态范围的方法，简单来说就是分析在程序的哪些地方可以访问到该指针。
+再往简单的说，Go是通过在编译器里做逃逸分析（escape analysis）来决定一个对象放栈上还是放堆上，不逃逸的对象放栈上，可能逃逸的放堆上；即我发现变量在退出函数后没有用了，那么就把丢到栈上，毕竟栈上的内存分配和回收比堆上快很多；反之，函数内的普通变量经过逃逸分析后，发现在函数退出后变量还有在其他地方上引用，那就将变量分配在堆上。做到按需分配（哪里的人民需要我，我就往哪去~~，一个党员的呐喊）。
+为何需要逃逸分析 ok，了解完堆和栈各自的优缺点后，我们就可以更好的知道逃逸分析存在的目的了：
+减少gc压力，栈上的变量，随着函数退出后系统直接回收，不需要gc标记后再清除。 减少内存碎片的产生。 减轻分配堆内存的开销，提高程序的运行速度。 如何确定是否逃逸 在Go中通过逃逸分析日志来确定变量是否逃逸，开启逃逸分析日志：
+go run -gcflags &amp;#39;-m -l&amp;#39; main.go -m 会打印出逃逸分析的优化策略，实际上最多总共可以用 4 个 -m，但是信息量较大，一般用 1 个就可以了。 -l 会禁用函数内联，在这里禁用掉内联能更好的观察逃逸情况，减少干扰。 逃逸案例 案例一：取地址发生逃逸 package main type UserData struct { Name string } func main() { var info UserData info.Name = &amp;#34;WilburXu&amp;#34; _ = GetUserInfo(info) } func GetUserInfo(userInfo UserData) *UserData { return &amp;amp;userInfo } 执行 go run -gcflags '-m -l' main.</description></item><item><title>golang 逃逸分析与栈、堆分配分析</title><link>https://gonejack.github.io/posts/%E5%BC%80%E5%8F%91/go%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90%E4%B8%8E%E6%A0%88%E5%A0%86%E5%88%86%E9%85%8D%E5%88%86%E6%9E%90/</link><pubDate>Tue, 01 Dec 2020 13:19:18 +0000</pubDate><guid>https://gonejack.github.io/posts/%E5%BC%80%E5%8F%91/go%E9%80%83%E9%80%B8%E5%88%86%E6%9E%90%E4%B8%8E%E6%A0%88%E5%A0%86%E5%88%86%E9%85%8D%E5%88%86%E6%9E%90/</guid><description>我们在写 golang 代码时候定义变量，那么一个很常见的问题，申请的变量保存在哪里呢？栈？还是堆？会不会有一些特殊例子？这篇文章我们就来探索下具体的case以及如何做分析。
+还是从实际使用场景出发：
+Question package main type User struct { ID int64 Name string Avatar string } func GetUserInfo() *User { return &amp;amp;User{ ID: 666666, Name: &amp;#34;sim lou&amp;#34;, Avatar: &amp;#34;https://www.baidu.com/avatar/666666&amp;#34;, } } func main() { u := GetUserInfo() println(u.Name) } 这里GetUserInfo 函数里面的 User 对象是存储在函数栈上还是堆上？
+什么是堆？什么是栈？ 简单说：
+堆：一般来讲是人为手动进行管理，手动申请、分配、释放。一般所涉及的内存大小并不定，一般会存放较大的对象。另外其分配相对慢，涉及到的指令动作也相对多 栈：由编译器进行管理，自动申请、分配、释放。一般不会太大，我们常见的函数参数（不同平台允许存放的数量不同），局部变量等等都会存放在栈上 今天我们介绍的 Go 语言，它的堆栈分配是通过 Compiler 进行分析，GC 去管理的，而对其的分析选择动作就是今天探讨的重点
+逃逸分析 逃逸分析是一种确定指针动态范围的方法，简单来说就是分析在程序的哪些地方可以访问到该指针。
+通俗地讲，逃逸分析就是确定一个变量要放堆上还是栈上，规则如下：
+是否有在其他地方（非局部）被引用。只要有可能被引用了，那么它一定分配到堆上。否则分配到栈上 即使没有被外部引用，但对象过大，无法存放在栈区上。依然有可能分配到堆上 对此你可以理解为，逃逸分析是编译器用于决定变量分配到堆上还是栈上的一种行为。
+在什么阶段确立逃逸 go 在编译阶段确立逃逸，注意并不是在运行时
+为什么需要逃逸 其实就是为了尽可能在栈上分配内存，我们可以反过来想，如果变量都分配到堆上了会出现什么事情？例如：
+垃圾回收（GC）的压力不断增大 申请、分配、回收内存的系统开销增大（相对于栈） 动态分配产生一定量的内存碎片 其实总的来说，就是频繁申请、分配堆内存是有一定 “代价” 的。会影响应用程序运行的效率，间接影响到整体系统。因此 “按需分配” 最大限度的灵活利用资源，才是正确的治理之道。这就是为什么需要逃逸分析的原因，你觉得呢？</description></item><item><title>go垃圾回收</title><link>https://gonejack.github.io/posts/%E5%BC%80%E5%8F%91/go%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/</link><pubDate>Tue, 01 Dec 2020 13:10:16 +0000</pubDate><guid>https://gonejack.github.io/posts/%E5%BC%80%E5%8F%91/go%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/</guid><description>搞懂Go垃圾回收 本文主要介绍了垃圾回收的概念，Golang GC的垃圾回收算法和工作原理，看完本文可以让你对Golang垃圾回收机制有个全面的理解。由于本人不了解其他语言的GC，并未对比其他语言的垃圾回收算法，需要的可以自行Google。
+什么是垃圾回收 垃圾回收（英语：Garbage Collection，缩写为GC），在计算机科学中是一种自动的存储器管理机制。当一个计算机上的动态存储器不再需要时，就应该予以释放，以让出存储器，这种存储器资源管理，称为垃圾回收。垃圾回收器可以让程序员减轻许多负担，也减少程序员犯错的机会。来自 维基百科
+简单地说， 垃圾回收(GC)是在后台运行一个守护线程，它的作用是在监控各个对象的状态，识别并且丢弃不再使用的对象来释放和重用资源。
+go的垃圾回收 当前Golang使用的垃圾回收机制是 三色标记发 配合 写屏障 和 辅助GC ，三色标记法是 标记-清除法 的一种增强版本。
+标记清除法(mark and sweep) 原始的标记清楚法分为两个步骤：
+标记。先STP(Stop The World)，暂停整个程序的全部运行线程，将被引用的对象打上标记 清除没有被打标机的对象，即回收内存资源，然后恢复运行线程。 这样做有个很大的问题就是要通过STW保证GC期间标记对象的状态不能变化，整个程序都要暂停掉，在外部看来程序就会卡顿。
+三色标记法 三色标记法是对标记阶段的改进，原理如下：
+初始状态所有对象都是白色。 从root根出发扫描所有根对象（下图a,b），将他们引用的对象标记为灰色（图中A，B） 那么什么是root呢？ 看了很多文章都没解释这这个概念，在这儿说明下：root区域主要是程序运行到当前时刻的栈和全局数据区域。
+分析灰色对象是否引用了其他对象。如果没有引用其它对象则将该灰色对象标记为黑色（上图中A）；如果有引用则将它变为黑色的同时将它引用的对象也变为灰色（上图中B引用了D） 重复步骤3，直到灰色对象队列为空。此时白色对象即为垃圾，进行回收。 也可以参考下面的动图辅助理解：
+Go GC如何工作 上面介绍的是GO GC采用的三色标记算法，但是好像并没有体现出来怎么减少STW对程序的影响呢？其实是因为 Golang GC的大部分处理是和用户代码并行的 。
+GC期间用户代码可能会改变某些对象的状态，如何实现GC和用户代码并行呢？先看下GC工作的完整流程：
+Mark:
+Mark Prepare: 初始化GC任务，包括开启写屏障(write barrier)和辅助GC(mutator assist)，统计root对象的任务数量等。 这个过程需要STW GC Drains: 扫描所有root对象，包括全局指针和goroutine(G)栈上的指针（扫描对应G栈时需停止该G)，将其加入标记队列(灰色队列)，并循环处理灰色队列的对象，直到灰色队列为空。 该过程后台并行执行 Mark Termination: 完成标记工作，重新扫描(re-scan)全局指针和栈。因为Mark和用户程序是并行的，所以在Mark过程中可能会有新的对象分配和指针赋值，这个时候就需要通过写屏障（write barrier）记录下来，re-scan 再检查一下。 这个过程也是会STW的。
+Sweep: 按照标记结果回收所有的白色对象， 该过程后台并行执行
+Sweep Termination: 对未清扫的span进行清扫, 只有上一轮的GC的清扫工作完成才可以开始新一轮的GC。 如果标记期间用户逻辑改变了刚打完标记的对象的引用状态，怎么办呢？</description></item><item><title>go程序初始化顺序</title><link>https://gonejack.github.io/posts/%E5%BC%80%E5%8F%91/go%E7%A8%8B%E5%BA%8F%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F/</link><pubDate>Tue, 01 Dec 2020 12:51:14 +0000</pubDate><guid>https://gonejack.github.io/posts/%E5%BC%80%E5%8F%91/go%E7%A8%8B%E5%BA%8F%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F/</guid><description>在一个 go 程序中通常包含：包、常量、变量、init()、main()等元素，如果同时存在多个包，包之间存在依赖关系，每个包中存在多个 init 函数，每个文件中存在多个 init 函数，那么问题来了，他们之间的执行顺序是什么样的？通过本文我们来对它们之间的执行顺序做尽可能详尽的说明。如有不正之处，欢迎批评指正。
+包的执行顺序 在 main 包中的 go 文件默认总是会被执行 同包下的不同 go 文件，按照文件名“从小到大”排序顺序执行 其他的包只有被 main 包 import 才会执行，按照 import 的先后顺序执行 被递归 import 的包的初始化顺序与 import 顺序相反，例如：导入顺序 main –&amp;gt; A –&amp;gt; B –&amp;gt; C，则初始化顺序为 C –&amp;gt; B –&amp;gt; A –&amp;gt; main 一个包被其它多个包 import，但只能被初始化一次 main 包总是被最后一个初始化，因为它总是依赖别的包 避免出现循环 import，例如：A –&amp;gt; B –&amp;gt; C –&amp;gt; A go 程序的初始化顺序见下图：
+init 和 main 函数 init()、main() 是 go 语言中的保留函数，两个函数在 go 语言中的区别如下： 相同点：
+两个函数在定义时不能有任何的参数和返回值 该函数只能由 go 程序自动调用，不可以被引用 不同点：</description></item></channel></rss>
